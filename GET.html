@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8" />
+ <title>Alimentando Monstro Verde</title> 
+ <link rel="stylesheet" type="text/css" href="css.css">
+ </head> 
+ <body> 
+ <form action="http://terrivel.herokuapp.com/monster" method="GET">
+ <div class="box"> 
+ <h1>Formulario de Pedido :</h1> 
+ <label> 
+ <span>Apelido:</span> <input type="text"  class="input_text" name="Apelido" id="Apelido"/> </br>
+ </label> 
+ <label> 
+ <span>Número de Pedras:</span> <input type="text" pattern="[0-9]" class="input_text" name="Número de Pedras" id="Número de Pedras"/></br>
+ </label>
+<label> 
+ <span>Tamnho das Pedras:</span> <input type="text" pattern="[0-9]" class="input_text" name="Tamnho das Pedras" id="Tamnho das Pedras"/></br> 
+ </label>
+<label> 
+ <span>Cor do Céu 1:</span> <input type="text" class="input_text" name="Cor do Céu 1" id="Cor do Céu 1"/></br> 
+ </label>
+<label> 
+ <span>Cor do Céu 2:</span> <input type="text" class="input_text" name="Cor do Céu 2" id="Cor do Céu 2"/></br> 
+ </label>
+<label> 
+ <span>Tipo de Pedras:</span> </br>
+
+ <select name="Tipo Pedras" id="Tipo Pedras">
+<option value="marroada">Marroada</option>
+<option value="ametista">Ametista</option>
+<option value="toazio">Topazio</option>
+<option value="espinela">Espinela</option>
+ </label>
+</select>
+<label> 
+ <span>Pedras Sortidas:</span> </br>
+ 
+ <select>
+<option value="sim">Sim</option>
+<option value="nao">Não</option>
+</label>
+</select>
+
+
+  
+ <input type="submit" value="Enviar">
+ </div> 
+ </form> 
+ </body> 
+ </html>
+
